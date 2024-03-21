@@ -9,6 +9,10 @@
     width: 100%;
     box-shadow: 0 1px grey;
 
+    .d-flex {
+        justify-content: space-between;
+    }
+
     nav {
         padding: 1rem 0;
         align-items: center;
@@ -17,6 +21,7 @@
             font-size: small;
             color: $bool-light;
             gap: 0.4rem;
+            width: fit-content;
 
             a {
                 text-decoration: none;
@@ -27,7 +32,7 @@
         .logo-container {
 
             text-align: center;
-            width: 6rem;
+            width: 10rem;
 
             .logo {
                 max-width: 100%;
@@ -35,6 +40,7 @@
         }
 
         .header-icons {
+            width: fit-content;
             justify-content: end;
             gap: 0.4rem;
         }
