@@ -15,8 +15,13 @@
 
         ul {
             font-size: small;
-            color: white;
+            color: $bool-light;
             gap: 0.4rem;
+
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
         }
 
         .logo-container {
