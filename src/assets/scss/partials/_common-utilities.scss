@@ -1,0 +1,43 @@
+/* #region Common */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+/* #endregion Common */
+
+/* #region Utilities */
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.grow {
+    flex-grow: 1;
+}
+
+.max-width {
+    max-width: 100%;
+}
+
+.display-none {
+    display: none;
+}
+
+
+
+/* #region Utilities */
