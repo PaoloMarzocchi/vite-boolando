@@ -1,0 +1,78 @@
+@use 'variables' as *;
+
+/* #region Card structure */
+
+.card {
+    /* width: 300px; */
+    margin-bottom: 2rem;
+
+    &:hover .max-width {
+        display: none;
+    }
+
+    &:hover .display-none.max-width {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .card-top {
+        position: relative;
+
+        .discount {
+            position: absolute;
+            background-color: $bool-discount-perc;
+            bottom: 2rem;
+            padding: 0.2rem 0.5rem;
+            color: $bool-light;
+        }
+
+        .eco {
+            position: absolute;
+            background-color: $bool-eco;
+            bottom: 2rem;
+            left: 3.5rem;
+            padding: 0.2rem 0.5rem;
+            color: $bool-light;
+        }
+
+        .eco.position-left {
+            left: 0;
+        }
+
+        .heart {
+            position: absolute;
+            top: 0.5rem;
+            right: 0;
+            padding: 0.4rem 0.6rem;
+            background-color: $bool-light;
+
+            &:hover {
+                color: $bool-discount-perc;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .card-description {
+
+        .discount-price {
+            color: $bool-discount-price;
+            font-weight: bold;
+        }
+
+        .original-price {
+            text-decoration: line-through;
+        }
+    }
+
+}
+
+/* #endregion Card structure */
+
+/* #region Card animation */
+
+
+
+
+
+/* #region Card animation */
