@@ -23,7 +23,10 @@ export default {
                 <img src="/img/boolean-logo.png" class="logo" alt="Logo boolean">
             </div>
             <div class="header-icons d-flex">
-                <i :class="icon" style="color: #ffffff;" v-for="icon in icons"></i>
+                <a href="#" v-for="icon in icons">
+                    <i :class="icon" style="color: #ffffff;"></i>
+                </a>
+
             </div>
         </nav>
 

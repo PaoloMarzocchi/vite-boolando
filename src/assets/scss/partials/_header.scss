@@ -7,7 +7,7 @@
     position: fixed;
     z-index: 1;
     width: 100%;
-    box-shadow: 0 1px grey;
+    box-shadow: 0 1px 5px grey;
 
     .d-flex {
         justify-content: space-between;
@@ -18,10 +18,8 @@
         align-items: center;
 
         ul {
-            /* font-size:small; */
             color: $bool-light;
             gap: 0.4rem;
-            width: fit-content;
 
             a {
                 text-decoration: none;
@@ -32,7 +30,7 @@
         .logo-container {
 
             text-align: center;
-            width: 10rem;
+            width: 8rem;
 
             .logo {
                 max-width: 100%;
@@ -40,9 +38,12 @@
         }
 
         .header-icons {
-            width: fit-content;
-            justify-content: end;
             gap: 0.4rem;
+
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
         }
     }
 
