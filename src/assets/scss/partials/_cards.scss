@@ -3,43 +3,59 @@
 /* #region Card structure */
 
 .card {
-    /* width: 300px; */
+    border-radius: 10px;
     margin-bottom: 2rem;
     box-shadow: 1px 1px 5px gray;
 
+
     &:hover .max-width {
-        display: none;
+
+        filter: opacity(0);
+        transition: filter 0.4s ease-in-out;
     }
 
-    &:hover .display-none.max-width {
-        display: inline-block;
+    &:hover .back-img.max-width {
+
+        filter: opacity(1);
         cursor: pointer;
     }
 
     .card-top {
         position: relative;
 
-        .discount {
+        img {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .back-img {
             position: absolute;
-            background-color: $bool-discount-perc;
+            top: 0;
+            left: 0;
+            filter: opacity(0);
+        }
+
+        .badge {
+            position: absolute;
             bottom: 2rem;
-            padding: 0.2rem 0.5rem;
-            margin-left: 0.3rem;
+            border-radius: 5px;
+            padding: 0.3rem 0.5rem;
+            margin-left: 0.5rem;
             color: $bool-light;
+            font-weight: bold;
+        }
+
+        .discount {
+            background-color: $bool-discount-perc;
         }
 
         .eco {
-            position: absolute;
             background-color: $bool-eco;
-            bottom: 2rem;
-            left: 3.8rem;
-            padding: 0.2rem 0.5rem;
-            color: $bool-light;
+            left: 3.5rem;
         }
 
         .eco.position-left {
             left: 0;
-            margin-left: 0.3rem;
         }
 
         i.fa-heart {

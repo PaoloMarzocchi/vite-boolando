@@ -17,10 +17,11 @@ export default {
     <div class="col">
         <div class="card">
             <div class="card-top">
-                <img :src="product.frontImg" class="max-width" alt="">
-                <img :src="product.backImg" class="display-none max-width" alt="">
-                <div class="discount" v-if="product.discount">-{{ product.discount }}%</div>
-                <div class="eco" :class="product.discount ? '' : 'position-left'" v-if="product.eco">{{ product.eco }}
+                <img :src="product.frontImg" class="front-img max-width" alt="">
+                <img :src="product.backImg" class=" back-img max-width" alt="">
+                <div class="badge discount" v-if="product.discount">-{{ product.discount }}%</div>
+                <div class="badge eco" :class="product.discount ? '' : 'position-left'" v-if="product.eco">{{
+                    product.eco }}
                 </div>
                 <i class="fa-solid fa-heart"></i>
             </div>

@@ -11,10 +11,6 @@ export default {
         return {
             products
         }
-
-    },
-    mounted() {
-        console.log(products);
     }
 }
 </script>
