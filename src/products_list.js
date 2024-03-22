@@ -8,8 +8,6 @@ export const products = [
         eco: "Sostenibilità",
         discount: 50,
         fullPrice: 29.99,
-        discountedPrice: 14.99,
-
     },
     {
         id: 2,
@@ -20,8 +18,6 @@ export const products = [
         eco: null,
         discount: 30,
         fullPrice: 29.99,
-        discountedPrice: 20.99,
-
     },
     {
         id: 3,
@@ -32,7 +28,6 @@ export const products = [
         eco: null,
         discount: 30,
         fullPrice: 184.99,
-        discountedPrice: 129.99,
 
     },
     {
@@ -44,8 +39,6 @@ export const products = [
         eco: "Sostenibilità",
         discount: 50,
         fullPrice: 29.99,
-        discountedPrice: 14.99,
-
     },
     {
         id: 5,
@@ -56,8 +49,6 @@ export const products = [
         eco: null,
         discount: null,
         fullPrice: 99.99,
-        discountedPrice: null,
-
     },
     {
         id: 6,
@@ -68,8 +59,6 @@ export const products = [
         eco: "Sostenibilità",
         discount: null,
         fullPrice: 99.99,
-        discountedPrice: null,
-
     },
 ]
 

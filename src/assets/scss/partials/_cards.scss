@@ -5,6 +5,7 @@
 .card {
     /* width: 300px; */
     margin-bottom: 2rem;
+    box-shadow: 1px 1px 5px gray;
 
     &:hover .max-width {
         display: none;
@@ -39,7 +40,8 @@
             left: 0;
         }
 
-        .heart {
+        i.fa-heart {
+            color: #000000;
             position: absolute;
             top: 0.5rem;
             right: 0;
@@ -54,6 +56,9 @@
     }
 
     .card-description {
+        li {
+            margin: 0.3rem 0;
+        }
 
         .discount-price,
         .full-price {
@@ -63,6 +68,7 @@
 
         .original-price {
             text-decoration: line-through;
+            margin-left: 0.5rem;
         }
     }
 

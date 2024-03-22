@@ -3,6 +3,12 @@ export default {
     name: 'ProductCard',
     props: {
         product: Object
+    },
+    methods: {
+        calcDiscountedPrice(fullPrice, discount) {
+            const discountedPrice = fullPrice - ((fullPrice * discount) / 100);
+            return discountedPrice.toFixed(2);
+        }
     }
 }
 </script>
@@ -16,7 +22,7 @@ export default {
                 <div class="discount" v-if="product.discount">-{{ product.discount }}%</div>
                 <div class="eco" :class="product.discount ? '' : 'position-left'" v-if="product.eco">{{ product.eco }}
                 </div>
-                <div class="heart">&hearts;</div>
+                <i class="fa-solid fa-heart"></i>
             </div>
             <div class="card-description">
                 <ul>
@@ -28,7 +34,8 @@ export default {
                     </li>
                     <li>
                         <template v-if="product.discount">
-                            <span class="discount-price">{{ product.discountedPrice }} €</span>
+                            <span class="discount-price">{{ calcDiscountedPrice(product.fullPrice, product.discount) }}
+                                €</span>
                             <span class="original-price">{{ product.fullPrice }} €</span>
                         </template>
                         <template v-else>
