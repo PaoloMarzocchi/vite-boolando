@@ -55,7 +55,8 @@
 
     .card-description {
 
-        .discount-price {
+        .discount-price,
+        .full-price {
             color: $bool-discount-price;
             font-weight: bold;
         }
