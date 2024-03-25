@@ -1,6 +1,7 @@
 <script>
-import { products } from '../products_list.js';
+//import { products } from '../products_list.js';
 import ProductCard from './ProductCard.vue';
+import { state } from '../state.js'
 
 export default {
     name: 'AppMain',
@@ -9,8 +10,12 @@ export default {
     },
     data() {
         return {
-            products
+            //products,
+            state,
         }
+    },
+    mounted() {
+        this.state.callApiProducts(this.state.databaseUrl);
     }
 }
 </script>
@@ -21,7 +26,8 @@ export default {
             <!-- Card section -->
             <div class="row d-flex">
 
-                <ProductCard :product="product" :key="products.id" v-for="product in products"></ProductCard>
+                <ProductCard :product="product" :key="state.products.id" v-for="product in state.products">
+                </ProductCard>
 
 
             </div>
