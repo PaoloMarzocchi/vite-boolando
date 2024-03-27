@@ -16,8 +16,8 @@
 
     #modal-box {
         width: 15rem;
-        height: 20rem;
         padding: 1rem;
+        border-radius: 10px;
         background-color: $bool-light;
         z-index: 101;
         display: flex;
@@ -27,10 +27,27 @@
             border: none;
             margin-left: auto;
             align-self: self-end;
+
+            &:hover {
+                cursor: pointer;
+            }
         }
 
         li {
             margin-bottom: 0.5rem;
+
+            h4 {
+                margin: 0.3rem 0;
+            }
+        }
+
+        #eco {
+            background-color: $bool-eco;
+            color: $bool-light;
+            padding: 0.3rem;
+            border-radius: 5px;
+            text-align: center;
+            margin-top: 1.5rem;
         }
     }
 }

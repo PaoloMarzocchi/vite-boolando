@@ -56,7 +56,7 @@ export default {
 
                 </template>
 
-                <li v-show="product.eco">
+                <li v-show="product.eco" id="eco">
                     <h4>
                         Prodotto eco-sostenibile
                     </h4>

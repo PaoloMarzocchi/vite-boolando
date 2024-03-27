@@ -42,7 +42,7 @@ export default {
                     <li>
                         {{ product.brand }}
                     </li>
-                    <li @click="showProduct(product)">
+                    <li @click="showProduct(product)" id="model">
                         <h4>{{ product.type }}</h4>
                     </li>
                     <li>

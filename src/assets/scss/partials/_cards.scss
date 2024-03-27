@@ -80,6 +80,10 @@
             margin: 0.3rem 0;
         }
 
+        #model:hover {
+            cursor: pointer;
+        }
+
         .discount-price,
         .full-price {
             color: $bool-discount-price;
