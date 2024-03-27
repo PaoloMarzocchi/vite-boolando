@@ -15,8 +15,9 @@
 
 
     #modal-box {
-        width: 15rem;
+        width: 30rem;
         padding: 1rem;
+        border: 1px solid $modal-bg;
         border-radius: 10px;
         background-color: $bool-light;
         z-index: 101;
@@ -33,21 +34,44 @@
             }
         }
 
-        li {
-            margin-bottom: 0.5rem;
+        .img-container {
+            width: 40%;
+            margin-right: 1.5rem;
 
-            h4 {
-                margin: 0.3rem 0;
+            img {
+                max-width: 100%;
+                border: 1px solid $modal-bg;
+                border-radius: 5px;
             }
         }
 
-        #eco {
-            background-color: $bool-eco;
-            color: $bool-light;
-            padding: 0.3rem;
-            border-radius: 5px;
-            text-align: center;
-            margin-top: 1.5rem;
+        ul {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            li {
+                margin-bottom: 0.5rem;
+
+                h4 {
+                    margin: 0.3rem 0;
+                }
+
+                .discount {
+                    color: $bool-discount-perc;
+                }
+            }
+
+            #eco {
+                background-color: $bool-eco;
+                color: $bool-light;
+                padding: 0.3rem;
+                border-radius: 5px;
+                text-align: center;
+                margin-top: 1.5rem;
+            }
         }
+
     }
 }

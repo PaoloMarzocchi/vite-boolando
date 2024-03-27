@@ -17,7 +17,7 @@
     &:hover .back-img.max-width {
 
         filter: opacity(1);
-        cursor: pointer;
+
     }
 
     .card-top {
@@ -75,6 +75,10 @@
 
     .card-description {
         padding: 0.5rem;
+
+        &:hover {
+            cursor: pointer;
+        }
 
         li {
             margin: 0.3rem 0;
