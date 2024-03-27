@@ -1,22 +1,10 @@
 <script>
 //import { products } from '../products_list.js';
-import ProductCard from './ProductCard.vue';
-import { state } from '../state.js'
+//import ProductCard from './ProductCard.vue';
+//import { state } from '../state.js'
 
 export default {
     name: 'AppMain',
-    components: {
-        ProductCard
-    },
-    data() {
-        return {
-            //products,
-            state,
-        }
-    },
-    mounted() {
-        this.state.callApiProducts(this.state.databaseUrl);
-    }
 }
 </script>
 
@@ -25,16 +13,14 @@ export default {
         <div class="container">
             <!-- Card section -->
             <div class="row d-flex">
-
-                <ProductCard :product="product" :key="state.products.id" v-for="product in state.products">
-                </ProductCard>
-
-
+                <slot />
             </div>
             <!-- /Card section -->
         </div>
     </main>
+    <!-- <div id="modal" v-show="modalToggle">
 
+    </div> -->
 </template>
 
 <style></style>

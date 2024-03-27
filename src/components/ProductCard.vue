@@ -2,13 +2,24 @@
 
 export default {
     name: 'ProductCard',
+    emits: ['show-product'],
     props: {
-        product: Object
+        product: Object,
+    },
+    data() {
+        return {
+            productObj: {},
+        }
     },
     methods: {
         calcDiscountedPrice(fullPrice, discount) {
-            const discountedPrice = fullPrice - ((fullPrice * discount) / 100);
-            return discountedPrice.toFixed(2);
+            const discountedPrice = (fullPrice - ((fullPrice * discount) / 100)).toFixed(2);
+            this.productObj.discountedPrice = discountedPrice;
+            return discountedPrice;
+        },
+        showProduct(objProduct) {
+            this.productObj = objProduct;
+            this.$emit('show-product', this.productObj);
         }
     }
 }
@@ -31,7 +42,7 @@ export default {
                     <li>
                         {{ product.brand }}
                     </li>
-                    <li>
+                    <li @click="showProduct(product)">
                         <h4>{{ product.type }}</h4>
                     </li>
                     <li>
