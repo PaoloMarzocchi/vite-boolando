@@ -1,0 +1,36 @@
+@use './variables' as *;
+
+#modal {
+    width: 100%;
+    height: 100vh;
+    background-color: $modal-bg;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+    #modal-box {
+        width: 15rem;
+        height: 20rem;
+        padding: 1rem;
+        background-color: $bool-light;
+        z-index: 101;
+        display: flex;
+        flex-direction: column;
+
+        #modal-close {
+            border: none;
+            margin-left: auto;
+            align-self: self-end;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+    }
+}

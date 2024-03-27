@@ -2,6 +2,7 @@ import { reactive } from 'vue';
 import axios from 'axios';
 
 export const state = reactive({
+    modalToggle: false,
     products: [],
     databaseUrl: 'http://localhost:3000/products',
     callApiProducts(url) {
